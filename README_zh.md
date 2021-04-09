@@ -1,14 +1,14 @@
 # lucky-item
 
-Randomly select some items from an array. Also can random based on weights.
+从集合中随机抽出几个元素，也可以根据元素的权重进行抽取。
 
 ```bash
 npm install lucky-item --save
 ```
 
-Eglish | [中文简体](./README_zh.md)
+[Eglish](./README.md) | 中文简体
 
-## Usage
+## 使用
 
 ```js
 const lucky = require('lucky-item');
@@ -59,7 +59,7 @@ lucky.itemBy(arr, 'weight');
 // { id: 10, weight: 5120 }
 ```
 
-If you want lucky indexs or items can repeated:
+如果你希望幸运下标或幸运条目可重复：
 
 ```js
 const arr = [
@@ -106,15 +106,15 @@ repeatableLucky.itemsBy(arr, 'weight', 3);
 indexs<T>(arr: T[], count: number, options?: Options): number[];
 ```
 
-Randomly select some indexs from the array.
+从 `arr` 中随机出若干个幸运下标。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param count** The number of indexs you want to select.
+**@param count** 要随机出的下标数。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the array of lucky indexs.
+**@returns** 返回幸运下标数组。
 
 ### index
 
@@ -122,13 +122,13 @@ Randomly select some indexs from the array.
 index<T>(arr: T[], options?: Options): number;
 ```
 
-Randomly select an index from the array.
+从 `arr` 中随机出一个幸运下标。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the lucky index.
+**@returns** 返回一个幸运下标。
 
 ### items
 
@@ -136,15 +136,15 @@ Randomly select an index from the array.
 items<T>(arr: T[], count: number, options?: Options): T[];
 ```
 
-Randomly select some items from the array.
+从 `arr` 中随机出若干个幸运条目。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param count** The number of items you want to select.
+**@param count** 要随机出的条目数
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the array of lucky items
+**@returns** 返回幸运条目数组。
 
 ### item
 
@@ -152,13 +152,13 @@ Randomly select some items from the array.
 item<T>(arr: T[], options?: Options): T;
 ```
 
-Randomly select an item from the array.
+从 `arr` 中随机出一个幸运条目。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the lucky item.
+**@returns** 返回一个幸运条目。
 
 ### indexsBy
 
@@ -166,17 +166,17 @@ Randomly select an item from the array.
 indexsBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, count: number, options?: Options): number[];
 ```
 
-Randomly select some indexs from the array based on weights.
+根据条目权重从 `arr` 中随机出若干个幸运下标。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param weights** The field name of weights or a function that returns weights.
+**@param weights** 权重的字段名或计算出权重的函数。
 
-**@param count** The number of indexs you want to select.
+**@param count** 要随机出的下标数。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the array of lucky indexs.
+**@returns** 返回幸运下标数组。
 
 ### indexBy
 
@@ -184,15 +184,15 @@ Randomly select some indexs from the array based on weights.
 indexBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, options?: Options): number;
 ```
 
-Randomly select an index from the array based on weights.
+根据条目权重从 `arr` 中随机出一个幸运下标。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param weights** The field name of weights or a function that returns weights.
+**@param weights** 权重的字段名或计算出权重的函数。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the lucky index.
+**@returns** 返回一个幸运下标。
 
 ### itemsBy
 
@@ -200,17 +200,17 @@ Randomly select an index from the array based on weights.
 itemsBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, count: number, options?: Options): T[];
 ```
 
-Randomly select some items from the array based on weights.
+根据条目权重从 `arr` 中随机出若干个幸运条目。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param weights** The field name of weights or a function that returns weights.
+**@param weights** 权重的字段名或计算出权重的函数。
 
-**@param count** The number of items you want to select.
+**@param count** 要随机出的条目数。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the array of lucky items.
+**@returns** 返回幸运条目数组。
 
 ### itemBy
 
@@ -218,15 +218,15 @@ Randomly select some items from the array based on weights.
 itemBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, options?: Options): T;
 ```
 
-Randomly select an item from the array based on weights.
+根据条目权重从 `arr` 中随机出一个幸运条目。
 
-**@param arr** The array for selection.
+**@param arr** 供随机的集合。
 
-**@param weights** The field name of weights or a function that returns weights.
+**@param weights** 权重的字段名或计算出权重的函数。
 
-**@param options** (optional) For more details, please see the following description of the interface.
+**@param options** （可选）可配置参数看下文。
 
-**@returns** Returns the lucky item.
+**@returns** 返回一个幸运条目。
 
 ## Interface
 
@@ -243,13 +243,13 @@ declare interface Options {
 
 Type: `boolean` 
 
-If `unique` is false, lucky indexs or items can be repeated. Default value is true.
+如果该值为 `false` ，则随机出的幸运下标或幸运条目可重复。
 
 #### random:
 
 Type: `Function`
 
-A function that return a number between `min` and `max`.
+用于生成一个在 `min` 和 `max` 之间的数（包含 `min` 和 `max`）。
 
 ```ts
 (min: number, max: number): number
@@ -263,7 +263,7 @@ declare interface GetWeightsFunc<T> {
 }
 ```
 
-A function that return weights. This function will be called when we need the weights of an item. This function should return a non-negative number.
+用户计算条目权重的函数，传入一个条目，返回该条目的权重。
 
 ## License
 
