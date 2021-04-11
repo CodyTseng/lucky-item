@@ -1,11 +1,9 @@
 
+declare const lucky: LuckyItem;
 export default lucky;
-export let LuckyItem: LuckyItem;
 
-declare let lucky: Lucky;
-
-declare interface Lucky {
-
+export declare class LuckyItem {
+    constructor(options?: Options);
     /**
      * Randomly select some indexs from the array.
      * 
@@ -15,7 +13,6 @@ declare interface Lucky {
      * @returns Returns the array of lucky indexs.
      */
     indexs<T>(arr: T[], count: number, options?: Options): number[];
-
     /**
      * Randomly select an index from the array.
      * 
@@ -24,7 +21,6 @@ declare interface Lucky {
      * @returns Returns the lucky index.
      */
     index<T>(arr: T[], options?: Options): number;
-
     /**
      * Randomly select some items from the array.
      * 
@@ -34,7 +30,6 @@ declare interface Lucky {
      * @returns Returns the array of lucky items
      */
     items<T>(arr: T[], count: number, options?: Options): T[];
-
     /**
      * Randomly select an item from the array.
      * 
@@ -43,8 +38,6 @@ declare interface Lucky {
      * @returns Returns the lucky item.
      */
     item<T>(arr: T[], options?: Options): T;
-
-
     /**
      * Randomly select some indexs from the array based on weights.
      * 
@@ -55,7 +48,6 @@ declare interface Lucky {
      * @returns Returns the array of lucky indexs.
      */
     indexsBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, count: number, options?: Options): number[];
-
     /**
      * Randomly select an index from the array based on weights.
      * 
@@ -65,7 +57,6 @@ declare interface Lucky {
      * @returns Returns the lucky index.
      */
     indexBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, options?: Options): number;
-
     /**
      * Randomly select some items from the array based on weights.
      * 
@@ -76,7 +67,6 @@ declare interface Lucky {
      * @returns Returns the array of lucky items.
      */
     itemsBy<T>(arr: T[], weights: string | GetWeightsFunc<T>, count: number, options?: Options): T[];
-
     /**
      * Randomly select an item from the array based on weights.
      * 
@@ -99,8 +89,4 @@ declare interface GetWeightsFunc<T> {
 declare interface Options {
     unique?: boolean;
     random?: RandomFunc;
-}
-
-declare interface LuckyItem {
-    new(options?: Options): Lucky;
 }
