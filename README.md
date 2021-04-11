@@ -241,13 +241,23 @@ declare interface Options {
 
 #### unique:
 
-Type: `boolean` 
+Type: `boolean`
 
-If `unique` is false, lucky indexs or items can be repeated. Default value is true.
+Default: `true`
+
+If `unique` is false, lucky indexs or items can be repeated.
 
 #### random:
 
 Type: `Function`
+
+Default:
+
+```js
+function _random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+```
 
 A function that return a number between `min` and `max`.
 

@@ -241,13 +241,23 @@ declare interface Options {
 
 #### unique:
 
-Type: `boolean` 
+Type: `boolean`
+
+Default: `true`
 
 如果该值为 `false` ，则随机出的幸运下标或幸运条目可重复。
 
 #### random:
 
 Type: `Function`
+
+Default:
+
+```js
+function _random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+```
 
 用于生成一个在 `min` 和 `max` 之间的数（包含 `min` 和 `max`）。
 
@@ -267,4 +277,4 @@ declare interface GetWeightsFunc<T> {
 
 ## License
 
-MIT © Cody Tseng
+[MIT](./LICENSE) © Cody Tseng
