@@ -277,4 +277,4 @@ A function that return weights. This function will be called when we need the we
 
 ## License
 
-MIT © Cody Tseng
+[MIT](./LICENSE) © Cody Tseng
