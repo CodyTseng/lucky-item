@@ -1,6 +1,6 @@
 # lucky-item
 
-[![Build Status](https://travis-ci.com/CodyTseng/lucky-item.svg?branch=master)](https://travis-ci.com/CodyTseng/lucky-item)
+[![Build Status](https://travis-ci.com/CodyTseng/lucky-item.svg?branch=master)](https://travis-ci.com/CodyTseng/lucky-item) [![Coverage Status](https://coveralls.io/repos/github/CodyTseng/lucky-item/badge.svg?branch=master)](https://coveralls.io/github/CodyTseng/lucky-item?branch=master)
 
 从集合中随机抽出几个元素，也可以根据元素的权重进行抽取。
 

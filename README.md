@@ -1,6 +1,6 @@
 # lucky-item
 
-[![Build Status](https://travis-ci.com/CodyTseng/lucky-item.svg?branch=master)](https://travis-ci.com/CodyTseng/lucky-item)
+[![Build Status](https://travis-ci.com/CodyTseng/lucky-item.svg?branch=master)](https://travis-ci.com/CodyTseng/lucky-item) [![Coverage Status](https://coveralls.io/repos/github/CodyTseng/lucky-item/badge.svg?branch=master)](https://coveralls.io/github/CodyTseng/lucky-item?branch=master)
 
 Randomly select some items from an array. Also can random based on weights.
 
