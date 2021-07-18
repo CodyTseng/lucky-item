@@ -13,7 +13,7 @@ npm install lucky-item --save
 ## 使用
 
 ```js
-const lucky = require('lucky-item');
+const lucky = require('lucky-item').default;
 
 const arr = [
     { id: 1, weight: 10 },
@@ -78,7 +78,7 @@ const arr = [
 ];
 
 // Method 1:
-const lucky = require('lucky-item');
+const lucky = require('lucky-item').default;
 
 lucky.itemsBy(arr, 'weight', 3, { unique: false });
 // [
