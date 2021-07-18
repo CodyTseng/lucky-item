@@ -2,9 +2,10 @@
   "name": "lucky-item",
   "version": "1.1.2",
   "description": "Randomly select some items from an array. Also can random based on weights.",
-  "main": "index.js",
+  "main": "./lucky-item",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
     "url": "https://github.com/CodyTseng/lucky-item/issues"
   },
   "homepage": "https://github.com/CodyTseng/lucky-item#readme",
-  "types": "index.d.ts"
+  "types": "index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
