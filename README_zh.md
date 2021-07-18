@@ -1,5 +1,7 @@
 # lucky-item
 
+[![Build Status](https://travis-ci.com/CodyTseng/lucky-item.svg?branch=master)](https://travis-ci.com/CodyTseng/lucky-item)
+
 从集合中随机抽出几个元素，也可以根据元素的权重进行抽取。
 
 ```bash

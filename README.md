@@ -1,5 +1,7 @@
 # lucky-item
 
+[![Build Status](https://travis-ci.com/CodyTseng/lucky-item.svg?branch=master)](https://travis-ci.com/CodyTseng/lucky-item)
+
 Randomly select some items from an array. Also can random based on weights.
 
 ```bash
