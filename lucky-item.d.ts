@@ -1,11 +1,11 @@
-declare interface RandomFunc {
+interface RandomFunc {
     (min: number, max: number): number;
 }
-declare interface Options {
+interface Options {
     unique?: boolean;
     random?: RandomFunc;
 }
-declare interface GetWeightsFunc<T> {
+interface GetWeightsFunc<T> {
     (a: T): number;
 }
 export declare class LuckyItem {

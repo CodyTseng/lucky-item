@@ -42,7 +42,7 @@ class LuckyItem {
      * @returns Returns the array of lucky items
      */
     items(arr, count, options = {}) {
-        return this.indexs(arr, count, options).map(index => arr[index]);
+        return this.indexs(arr, count, options).map((index) => arr[index]);
     }
     /**
      * Randomly select an item from the array.
@@ -70,13 +70,13 @@ class LuckyItem {
         const weightsFunc = typeof weights === 'string'
             ? (o) => o[weights]
             : weights;
-        const weightsArr = arr.map(a => weightsFunc(a));
+        const weightsArr = arr.map((a) => weightsFunc(a));
         let totalWeights = weightsArr.reduce((acc, cur) => acc + cur, 0);
         const arrWithIndex = weightsArr.map((value, index) => [index, value]);
         return [...new Array(count)].map(() => {
             const randomInt = random(1, totalWeights);
             let startWeight = 0;
-            const find = arrWithIndex.find(a => {
+            const find = arrWithIndex.find((a) => {
                 startWeight += a[1];
                 return startWeight >= randomInt;
             });
@@ -108,7 +108,7 @@ class LuckyItem {
      * @returns Returns the array of lucky items.
      */
     itemsBy(arr, weights, count, options = {}) {
-        return this.indexsBy(arr, weights, count, options).map(index => arr[index]);
+        return this.indexsBy(arr, weights, count, options).map((index) => arr[index]);
     }
     /**
      * Randomly select an item from the array based on weights.
