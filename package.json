@@ -1,6 +1,6 @@
 {
   "name": "lucky-item",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Randomly select some items from an array. Also can random based on weights.",
   "main": "./lucky-item",
   "scripts": {
@@ -32,7 +32,6 @@
     "url": "https://github.com/CodyTseng/lucky-item/issues"
   },
   "homepage": "https://github.com/CodyTseng/lucky-item#readme",
-  "types": "index.d.ts",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
